@@ -2,6 +2,7 @@
   "name": "api-backlog",
   "version": "1.0.0",
   "description": "API de Backlog para filmes",
+  "type": "module", 
   "main": "server.js",
   "scripts": {
     "test": "test"
