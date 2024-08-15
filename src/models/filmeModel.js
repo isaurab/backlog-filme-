@@ -12,4 +12,22 @@ const filmeModel = sequelize.define('Filmes', {
         type: DataTypes.STRING,
         allowNull: false 
     },
-})
+    diretor: {
+        type: DataTypes.STRING, 
+        allowNull: false
+    },
+    ano:{
+        Type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    genero:{
+        type:DataTypes.STRING,
+        allowNull: false
+    }
+}, {
+    timestamps: false
+});
+
+export default filmeModel;
+
+
