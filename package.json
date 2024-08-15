@@ -5,9 +5,10 @@
   "type": "module", 
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "node server.js --watch"
   },
-  "author": "Afranio C",
+  "author": "Isaura",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.2",
