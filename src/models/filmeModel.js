@@ -3,7 +3,7 @@ import sequelize from "../config/dbConfig.js";
 
 const filmeModel = sequelize.define('Filmes', {
     id: {
-        type:DataTypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false,  //não quer que aceita um campo vazio
         primaryKey: true, 
         autoIncrement: false //não fazer incremento automatico
@@ -17,15 +17,15 @@ const filmeModel = sequelize.define('Filmes', {
         allowNull: false
     },
     ano:{
-        Type: DataTypes.INTEGER,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     genero:{
-        type:DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     }
 }, {
-    timestamps: false
+    timestamps: false,
 });
 
 export default filmeModel;
