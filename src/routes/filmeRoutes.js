@@ -31,6 +31,14 @@ catch(err){
     }
  })
 
+router.put("/:id", (req, res)=>{
+    try{
+        filme.AtualizarFilme(req, res);
+    }catch(err){
+        res.status(500).json({erro: err.message});
+    }
+});
+
  export default router;
 
 
